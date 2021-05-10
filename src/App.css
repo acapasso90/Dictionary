@@ -2,6 +2,7 @@
   text-align: right;
 }
 
+.Phonetic i {font-size: 20pt; }
 .result {text-align: left;}
 ul {list-style: none;
 padding: 0;}
