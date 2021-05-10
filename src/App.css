@@ -2,7 +2,14 @@
   text-align: right;
 }
 
+.definition, .Example, .Synonym, section {margin-bottom: 10px;}
+
+footer {text-align: center;}
+
+input {width: 200px;}
+
 .Phonetic i {font-size: 20pt; }
 .result {text-align: left;}
+
 ul {list-style: none;
 padding: 0;}
