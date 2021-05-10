@@ -9,6 +9,11 @@ footer {text-align: center;}
 input {width: 200px;}
 
 .Phonetic i {font-size: 20pt; }
+
+.Photos img {border-radius: 2px;
+  margin-bottom: 20px;
+}
+
 .result {text-align: left;}
 
 ul {list-style: none;
