@@ -1,12 +1,56 @@
 .App {
   text-align: right;
+  color: #DDACC3;
+  background-image: url('./media/layered-waves-haikei.svg');
+  background-color: #1A1A1A;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 }
+
+a {color: #9970ce;
+text-decoration: none; }
+
+a:hover {color:  #bde6ad; }
+
+button {background-color: #1A1A1A; 
+  position: relative;
+  top: -1px;
+  margin-left: 4px;
+  height: 31px;
+  color: #DDACC3;
+  border: 1px solid #9970ce;
+}
+
+.container {  position: relative;
+min-height: 100vh;}
 
 .definition, .Example, .Synonym, section {margin-bottom: 10px;}
 
+header {text-align: left;
+  margin-top: 15px;
+  color: #9970ce;
+white-space: nowrap;}
+
+header h2 {font-size: 28pt;
+margin-left: 30px;}
+
 footer {text-align: center;}
 
-input {width: 200px;}
+form {margin-top: 25px;}
+
+.grey {color: #bde6ad;}
+
+input {width: 200px;
+  font-size: 14pt;
+  background-color: #242424;
+  border: 1px solid #9970ce;
+  color: #DDACC3;
+}
+
+.moon {width: 50px;
+}
+
+.purple {color: #9970ce;}
 
 .Phonetic i {font-size: 20pt; }
 

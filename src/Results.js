@@ -6,7 +6,7 @@ export default function Result(props){
     if (props.data != null){ return(
         <div className="result">
             <section>
-                <h2>{props.data.word}</h2>
+                <h2 className="grey">{props.data.word}</h2>
                 {props.data.phonetics.map(function(phonetic, index) {
                 return(
                     <div key={index}>

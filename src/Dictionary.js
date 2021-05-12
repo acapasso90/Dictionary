@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
+import moon from "./media/moon.png";
 
 export default function Dictionary(){
 
@@ -47,10 +48,26 @@ function load(){
 if (loaded){
     return(
         <div className="Dictionary">
-            <form onSubmit={handleSubmit}>
-                <input type="search" onChange={handleKeywordChange} autoFocus={true} autoComplete="off" />
-                <button onClick={search}><i className="fas fa-search"></i></button>
-            </form>
+            <div className="row">
+                <div className="col-6">
+                    <header>
+                        <div className="row">
+                            <div className="col-1">
+                                <img src={moon} alt="moon" className="moon"/>
+                            </div>
+                            <div className="col-1">
+                                <h2>Night Mode Dictionary</h2>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+                <div className="col-6">
+                    <form onSubmit={handleSubmit}>
+                    <input type="search" onChange={handleKeywordChange} autoFocus={true} autoComplete="off" />
+                    <button onClick={search}><i className="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
             <Results data={results} />
             <Photos photos={photos} />
         </div>);
