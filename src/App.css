@@ -10,9 +10,9 @@
 a {color: #9970ce;
 text-decoration: none; }
 
-a:hover {color:  #bde6ad; }
+a:hover {color:  #92bcec; }
 
-.blue, .definition {color: #9970ce;}
+.blue, .definition {color: #92bcec;}
 
 button {background-color: #1A1A1A; 
   position: relative;
@@ -30,6 +30,7 @@ min-height: 100vh;}
 
 .definition {font-size: 16pt;}
 
+.definitionColumn {margin-bottom: 20px;}
 header {text-align: left;
   margin-top: 15px;
   color: #9970ce;
@@ -61,7 +62,8 @@ input {width: 200px;
 .moon {width: 50px;
 }
 
-.purple, strong {color: #92bcec;}
+
+.purple, strong {color: #9970ce;}
 
 .Phonetic i {font-size: 20pt; }
 
@@ -73,6 +75,7 @@ input {width: 200px;
 
 .results {padding-top: 100px;}
 
+strong {font-size: 15pt;}
 
 ul {list-style: none;
   display: grid;

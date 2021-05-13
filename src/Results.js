@@ -3,7 +3,8 @@ import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
 
 export default function Result(props){
-    if (props.data != null){ return(
+    if (props.data != null){
+        return(
         <div className="result">
             <section>
                 <h2 className="blue">{props.data.word}</h2>

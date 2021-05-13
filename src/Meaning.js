@@ -7,10 +7,11 @@ export default function Meaning(props){
 <div className="Meaning">
         <h3 className="purple"> {props.meaning.partOfSpeech} </h3>
         {props.meaning.definitions.map(function(definition, index) {
+            let formattedIndex = ++index
             return (
-                <div key={index}>
+                <div key={index} className="definitionColumn">
                     <p className="definition">
-                    {definition.definition} 
+                    {formattedIndex}: {definition.definition} 
                     </p>
                     <Example example={definition.example} />
                     <Synonyms synonynms={definition.synonyms} /> 
