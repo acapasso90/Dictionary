@@ -12,6 +12,8 @@ text-decoration: none; }
 
 a:hover {color:  #bde6ad; }
 
+.blue, .definition {color: #9970ce;}
+
 button {background-color: #1A1A1A; 
   position: relative;
   top: -1px;
@@ -26,6 +28,8 @@ min-height: 100vh;}
 
 .definition, .Example, .Synonym, section {margin-bottom: 10px;}
 
+.definition {font-size: 16pt;}
+
 header {text-align: left;
   margin-top: 15px;
   color: #9970ce;
@@ -34,11 +38,17 @@ white-space: nowrap;}
 header h2 {font-size: 28pt;
 margin-left: 30px;}
 
+#headerRow {position: fixed;
+left: 12px;
+  width: 100%;
+  box-shadow: 0 3px 5px #272727;
+  background-color: #1A1A1A;
+  padding-bottom: 10px;
+}
+
 footer {text-align: center;}
 
 form {margin-top: 25px;}
-
-.grey {color: #bde6ad;}
 
 input {width: 200px;
   font-size: 14pt;
@@ -47,10 +57,11 @@ input {width: 200px;
   color: #DDACC3;
 }
 
+
 .moon {width: 50px;
 }
 
-.purple {color: #9970ce;}
+.purple, strong {color: #92bcec;}
 
 .Phonetic i {font-size: 20pt; }
 
@@ -60,5 +71,10 @@ input {width: 200px;
 
 .result {text-align: left;}
 
+.results {padding-top: 100px;}
+
+
 ul {list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 padding: 0;}

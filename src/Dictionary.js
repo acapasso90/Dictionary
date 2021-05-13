@@ -48,7 +48,7 @@ function load(){
 if (loaded){
     return(
         <div className="Dictionary">
-            <div className="row">
+            <div className="row" id="headerRow">
                 <div className="col-6">
                     <header>
                         <div className="row">
@@ -63,13 +63,15 @@ if (loaded){
                 </div>
                 <div className="col-6">
                     <form onSubmit={handleSubmit}>
-                    <input type="search" onChange={handleKeywordChange} autoFocus={true} autoComplete="off" />
+                    <input type="search" onChange={handleKeywordChange} autoFocus={true} placeholder="Enter a word" autoComplete="off" />
                     <button onClick={search}><i className="fas fa-search"></i></button>
                     </form>
                 </div>
             </div>
-            <Results data={results} />
-            <Photos photos={photos} />
+            <div className="results">
+                <Results data={results} />
+                <Photos photos={photos} />
+            </div>
         </div>);
 }
 
