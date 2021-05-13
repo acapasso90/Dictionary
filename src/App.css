@@ -21,7 +21,14 @@ button {background-color: #1A1A1A;
   height: 31px;
   color: #DDACC3;
   border: 1px solid #9970ce;
+  border-radius: 2px;
 }
+
+button:hover {background-color: #DDACC3;
+color: #000000;}
+
+button:active {position: relative;
+top: 1.5px;}
 
 .container {  position: relative;
 min-height: 100vh;}
@@ -30,7 +37,10 @@ min-height: 100vh;}
 
 .definition {font-size: 16pt;}
 
-.definitionColumn {margin-bottom: 20px;}
+.definitionColumn {margin-bottom: 20px;
+padding-left: 35px;
+width: 95%;}
+
 header {text-align: left;
   margin-top: 15px;
   color: #9970ce;
@@ -49,12 +59,14 @@ left: 12px;
 
 footer {text-align: center;}
 
-form {margin-top: 25px;}
+form {margin-top: 25px;
+white-space: nowrap;}
 
 input {width: 200px;
   font-size: 14pt;
   background-color: #242424;
   border: 1px solid #9970ce;
+  border-radius: 2px;
   color: #DDACC3;
 }
 
@@ -62,6 +74,9 @@ input {width: 200px;
 .moon {width: 50px;
 }
 
+#partOfSpeech {padding-top: 20px;
+margin-bottom: 15px;
+padding-left: 12px;}
 
 .purple, strong {color: #9970ce;}
 
@@ -75,9 +90,32 @@ input {width: 200px;
 
 .results {padding-top: 100px;}
 
+
 strong {font-size: 15pt;}
 
 ul {list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 padding: 0;}
+
+/*Phone Sized media query */
+
+@media screen and (max-width: 500px) {
+  header h2 {font-size: 22pt;
+    white-space: normal;
+   }
+
+  form {position: relative;
+  left: -14%;}
+
+  
+input {width: 170px;
+
+}
+
+  .moon {position: relative;
+    top: 25px;
+  }
+
+  .results {padding-top: 160px;}
+}

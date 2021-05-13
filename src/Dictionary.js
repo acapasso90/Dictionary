@@ -64,7 +64,7 @@ if (loaded){
                 <div className="col-6">
                     <form onSubmit={handleSubmit}>
                     <input type="search" onChange={handleKeywordChange} autoFocus={true} placeholder="Enter a word" autoComplete="off" />
-                    <button onClick={search}><i className="fas fa-search"></i></button>
+                    <button onClick={search} className="searchButton"><i className="fas fa-search"></i></button>
                     </form>
                 </div>
             </div>
