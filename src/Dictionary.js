@@ -82,21 +82,21 @@ if (loaded){
                 <div className="col-6">
                     <div className="row2">
                         <div className="col-6" id="dropdownLabelRow">
-                            <p className="languageLabel">Choose a Language</p>
+                        <p className="languageLabel">Choose a Language</p>
                             <DropdownButton id="dropdown-basic-button" title={languageDisplay}>
-                            <Dropdown.Item href="#/action-1" onClick={setUSEnglish} >English (US)</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2" onClick={setUKEnglish}>English (UK)</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3" onClick={setSpanish}>Spanish</Dropdown.Item>
-                            <Dropdown.Item href="#/action-4" onClick={setFrench}>French</Dropdown.Item>
-                            <Dropdown.Item href="#/action-5" onClick={setJapanese}>Japanese</Dropdown.Item>
-                            <Dropdown.Item href="#/action-6" onClick={setRussian}>Russian</Dropdown.Item>
-                            <Dropdown.Item href="#/action-7" onClick={setHindi}>Hindi</Dropdown.Item>
-                            <Dropdown.Item href="#/action-8" onClick={setGerman}>German </Dropdown.Item>
-                            <Dropdown.Item href="#/action-9" onClick={setItalian}>Italian</Dropdown.Item>
-                            <Dropdown.Item href="#/action-10" onClick={setKorean}>Korean</Dropdown.Item>
-                            <Dropdown.Item href="#/action-11" onClick={setPortuguese}>Brazilian Portuguese</Dropdown.Item>
-                            <Dropdown.Item href="#/action-12" onClick={setArabic}>Arabic</Dropdown.Item>
-                            <Dropdown.Item href="#/action-13" onClick={setTurkish}>Turkish</Dropdown.Item>
+                            <Dropdown.Item href="#/englishUS" onClick={setUSEnglish} >English (US)</Dropdown.Item>
+                            <Dropdown.Item href="#/englishUK" onClick={setUKEnglish}>English (UK)</Dropdown.Item>
+                            <Dropdown.Item href="#/spanish" onClick={setSpanish}>Spanish</Dropdown.Item>
+                            <Dropdown.Item href="#/french" onClick={setFrench}>French</Dropdown.Item>
+                            <Dropdown.Item href="#/japanese" onClick={setJapanese}>Japanese</Dropdown.Item>
+                            <Dropdown.Item href="#/russian" onClick={setRussian}>Russian</Dropdown.Item>
+                            <Dropdown.Item href="#/hindi" onClick={setHindi}>Hindi</Dropdown.Item>
+                            <Dropdown.Item href="#/german" onClick={setGerman}>German </Dropdown.Item>
+                            <Dropdown.Item href="#/italian" onClick={setItalian}>Italian</Dropdown.Item>
+                            <Dropdown.Item href="#/korean" onClick={setKorean}>Korean</Dropdown.Item>
+                            <Dropdown.Item href="#/portuguese" onClick={setPortuguese}>Brazilian Portuguese</Dropdown.Item>
+                            <Dropdown.Item href="#/arabic" onClick={setArabic}>Arabic</Dropdown.Item>
+                            <Dropdown.Item href="#/turkish" onClick={setTurkish}>Turkish</Dropdown.Item>
                             </DropdownButton>
                         </div>
                         <div className="col-6">
