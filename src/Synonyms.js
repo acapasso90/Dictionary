@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Synonyms(props){
-    if (props.synonynms){
+if (props.synonynms !== undefined && props.synonynms.length > 0){
     return( 
         <div className="Synonyms">
             <strong>Synonyms:</strong>&nbsp;
@@ -12,6 +12,5 @@ export default function Synonyms(props){
         </ul>
         </div>
     );
-} 
-else return null;
 }
+else return null}
