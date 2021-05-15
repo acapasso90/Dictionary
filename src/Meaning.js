@@ -4,10 +4,11 @@ import Example from "./Example";
 
 export default function Meaning(props){
     const [partofSpeech, setPartofSpeech] = useState(props.meaning.partOfSpeech)
-    if (partofSpeech === undefined){  setPartofSpeech(null);}
+    if (partofSpeech === "undefined"){  setPartofSpeech(null);}
+ 
 
 
-    useEffect(()=>{ if (partofSpeech === "undefined"){  setPartofSpeech(null);}
+    useEffect(()=>{ if (partofSpeech === "undefined" || partofSpeech === undefined){  setPartofSpeech(null);}
     else{ setPartofSpeech(props.meaning.partOfSpeech)};}, [props.meaning.partOfSpeech]);
     
     console.log(partofSpeech)
